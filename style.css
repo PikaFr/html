@@ -19,7 +19,6 @@ body {
 .presentation {
     display: flex;
     flex-direction: column;
-    /* Passe en mode colonne */
     max-width: 800px;
     margin: 20px;
 }
@@ -27,7 +26,6 @@ body {
 .pres,
 .image-pres {
     width: 100%;
-    /* Les deux éléments occupent 100% de la largeur */
     box-sizing: border-box;
     padding: 20px;
 }
@@ -35,20 +33,16 @@ body {
 .image-pres img {
     max-width: 100%;
     height: auto;
-    /* Garantit que l'image conserve son aspect ratio */
 }
 
-/* Média query pour ajuster le positionnement sur des écrans plus petits si nécessaire */
 @media (min-width: 600px) {
     .container {
         flex-direction: row;
-        /* Reviens à la disposition par défaut en mode colonne */
     }
 
     .pres,
     .image-pres {
         width: 50%;
-        /* Les deux éléments occupent maintenant 50% de la largeur */
     }
 }
 
